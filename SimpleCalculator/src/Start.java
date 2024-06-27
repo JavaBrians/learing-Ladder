@@ -7,5 +7,6 @@ public class  Start {
 
         person.giveLastName("Ebai");
         System.out.println(person.getLastName());
+
     }
 }
