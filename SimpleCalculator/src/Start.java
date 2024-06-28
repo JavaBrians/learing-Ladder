@@ -8,20 +8,17 @@ public class Start {
 //
 //        person.giveLastName("Ebai");
 //        System.out.println(person.getLastName());
-        MoreSyntaxErrorExample moreSyntaxErrorExample = new MoreSyntaxErrorExample();
-        moreSyntaxErrorExample.run();
-      int number =  MoreSyntaxErrorExample.number;
+//        MoreSyntaxErrorExample moreSyntaxErrorExample = new MoreSyntaxErrorExample();
+//        moreSyntaxErrorExample.run();
+//      int number =  MoreSyntaxErrorExample.number;
+
+        int number = 5;
+        FactorialDebugExample factorial = new FactorialDebugExample();
+        factorial.calculateFactorial(number);
+        System.out.println("The factorial of " + number + " is: " + factorial);
+
+
     }
-
-    public static void forTest(){
-        for(int i = 0; i < 4; i++){
-            System.out.println();
-        }
-    }
-
-
-
-
 
 
 }
