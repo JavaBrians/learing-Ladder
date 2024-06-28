@@ -12,10 +12,10 @@ public class Start {
 //        moreSyntaxErrorExample.run();
 //      int number =  MoreSyntaxErrorExample.number;
 
-        int number = 5;
+        int number = 6;
         FactorialDebugExample factorial = new FactorialDebugExample();
-        factorial.calculateFactorial(number);
-        System.out.println("The factorial of " + number + " is: " + factorial);
+        int fac = factorial.calculateFactorial(number);
+        System.out.println("The factorial of " + number + " is: " + fac);
 
 
     }
