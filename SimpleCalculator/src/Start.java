@@ -8,8 +8,9 @@ public class Start {
 //
 //        person.giveLastName("Ebai");
 //        System.out.println(person.getLastName());
-        SyntaxErrorExample syntaxErrorExample = new SyntaxErrorExample();
-        syntaxErrorExample.run();
+        MoreSyntaxErrorExample moreSyntaxErrorExample = new MoreSyntaxErrorExample();
+        moreSyntaxErrorExample.run();
+      int number =  MoreSyntaxErrorExample.number;
     }
 
     public static void forTest(){
