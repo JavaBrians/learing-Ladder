@@ -20,9 +20,11 @@ public class Start {
 //        int fac = factorial.calculateFactorial(number);
 //        System.out.println("The factorial of " + number + " is: " + fac);
 
+        // todo: test the code and see how it works
         // todo: to start coding it nice to have a plan
         // todo: improve this program do not build a new program
         //todo: understand the code and make a plan of action and work according to your plan
+
         int sum;
         System.out.println("enter the first number you want to add");
         int number1 = Integer.parseInt(keyboard.nextLine()); // 4
