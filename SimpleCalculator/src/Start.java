@@ -20,8 +20,8 @@ public class Start {
 //        int fac = factorial.calculateFactorial(number);
 //        System.out.println("The factorial of " + number + " is: " + fac);
 
-        // to start coding it nice to have a plan
-        // improve this program do not build a new program
+        // todo: to start coding it nice to have a plan
+        // todo: improve this program do not build a new program
         int sum;
         System.out.println("enter the first number you want to add");
         int number1 = Integer.parseInt(keyboard.nextLine()); // 4
