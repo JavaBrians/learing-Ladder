@@ -17,8 +17,6 @@ public class SimpleCalculator {
         return a / b;
     }
   public String UserOperator(char operator){
-        ;
-
         switch(operator){
             case '+':
                 return "+";
