@@ -22,7 +22,7 @@ public class Start {
 
         // todo: to start coding it nice to have a plan
         // todo: improve this program do not build a new program
-        //todo: understand the code and make a plan of action and work accordint to your plan
+        //todo: understand the code and make a plan of action and work according to your plan
         int sum;
         System.out.println("enter the first number you want to add");
         int number1 = Integer.parseInt(keyboard.nextLine()); // 4
