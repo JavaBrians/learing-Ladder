@@ -29,7 +29,7 @@ public class Start {
         //todo: understand the code and make a plan of action and work according to your plan
 
         //int sum;
-        System.out.println("enter the first number you want to add");
+        System.out.println("enter the first number you want");
         int number1 = Integer.parseInt(keyboard.nextLine()); // 4
         System.out.println("choose operator you want to use example -, +, /");
         String operator = keyboard.nextLine();
