@@ -1,11 +1,5 @@
 public class SimpleCalculator {
 
-
-
-
-
-
-
     public  int UserOperator(int num1, String operator,int num2) {
         switch (operator) {
             case "+":
@@ -19,7 +13,6 @@ public class SimpleCalculator {
             default:
                 System.out.println("Invalid operator.");
         }
-
         return 0;
 
     }
