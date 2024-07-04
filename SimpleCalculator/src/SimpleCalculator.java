@@ -15,7 +15,6 @@ public class SimpleCalculator {
             default:
                 System.out.println("Invalid operator.");
         }
-
         return 0;
 
     }
