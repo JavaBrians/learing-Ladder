@@ -15,10 +15,9 @@ public class ArrayTest {
 //        }
 
         for (int i = 0; i < listOfSecondNumbers.length; i++) {
-            for (int j = 0; j < listOfSecondNumbers.length; j++) {
-                listOfNumbers[i] = listOfSecondNumbers[j];//1 , 22
+            for (int listOfSecondNumber : listOfSecondNumbers) {
+                listOfNumbers[i] = listOfSecondNumber;//1 , 22
             }
-
         }
 
 
