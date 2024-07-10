@@ -11,7 +11,8 @@ public class ArrayTest {
         for (int i = 0; i < listOfSecondNumbers.length; i++) { // when i = 0, i+1 = 1 ;
             listOfNumbers[i] = listOfSecondNumbers[i];
             System.out.print(" " + listOfNumbers[i]);
-
+//            listOfNumbers[i]= i;
+//            System.out.println(" "+listOfNumbers[i]); // new line
         }
 
 
