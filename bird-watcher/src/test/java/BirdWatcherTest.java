@@ -23,7 +23,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:1")
     @DisplayName("The getLastWeek method correctly returns last week's counts")
-    @Disabled("remove this to run the test")
+    //@Disabled("remove this to run the test")
     public void itTestGetLastWeek() {
         assertThat(birdWatcher.getLastWeek())
             .containsExactly(DAY1, DAY2, DAY3, DAY4, DAY5, DAY6, TODAY);
@@ -32,7 +32,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:2")
     @DisplayName("The getToday method correctly returns today's counts")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itTestGetToday() {
         assertThat(birdWatcher.getToday()).isEqualTo(TODAY);
     }
@@ -40,7 +40,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:3")
     @DisplayName("The incrementTodaysCount method correctly increments today's counts")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itIncrementTodaysCount() {
         birdWatcher.incrementTodaysCount();
         assertThat(birdWatcher.getToday()).isEqualTo(TODAY + 1);
@@ -49,8 +49,9 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:4")
     @DisplayName("The hasDayWithoutBirds method returns true when day had no visits")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itHasDayWithoutBirds() {
+
         assertThat(birdWatcher.hasDayWithoutBirds()).isTrue();
     }
 
