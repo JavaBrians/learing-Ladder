@@ -54,12 +54,14 @@ class BirdWatcher {
     public int getBusyDays() {
         int count = 0;
         for (int i = 0; i < this.birdsPerDay.length; i++) {
-            if (this.birdsPerDay[i] >= 5) {
-                count = count + 1;
-            } else {
-                count = 0;
-            }
+//            if (this.birdsPerDay[i] >= 5) {
+//                count = count + 1;
+//            } else {
+//                count = 0;
+//            }
+            count = this.birdsPerDay[i] >= 5 ? count + 1 : count;
         }
+
         return count;
     }
 }
