@@ -20,14 +20,46 @@ class BirdWatcher {
     }
 
     public boolean hasDayWithoutBirds() {
-        return true;
+        for (int i = 0; i < this.birdsPerDay.length; i++) {
+            if (this.birdsPerDay[i] == 0) {
+                return true;
+            }
+            //this.birdsPerDay[i] += 1;
+        }
+        return false;
+
     }
 
     public int getCountForFirstDays(int numberOfDays) {
-        throw new UnsupportedOperationException("Please implement the BirdWatcher.getCountForFirstDays() method");
+        int result = 0;
+
+        if (numberOfDays > this.birdsPerDay.length) {
+            for (int i = 0; i < this.birdsPerDay.length; i++) {
+
+                result += this.birdsPerDay[i];
+            }
+
+        } else {
+            for (int i = 0; i <= numberOfDays; i++) {
+                result += i;
+
+            }
+        }
+
+
+        return result;
+
     }
 
     public int getBusyDays() {
-        throw new UnsupportedOperationException("Please implement the BirdWatcher.getBusyDays() method");
+        int count = 0;
+        for (int i = 0; i < this.birdsPerDay.length; i++) {
+            if (this.birdsPerDay[i] >= 5) {
+                count = count + 1;
+            } else {
+                count = 0;
+            }
+        }
+        return count;
     }
 }

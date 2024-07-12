@@ -58,7 +58,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:4")
     @DisplayName("The hasDayWithoutBirds method returns false when no day had zero visits")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itShouldNotHaveDaysWithoutBirds() {
         birdWatcher = new BirdWatcher(new int[]{1, 2, 5, 3, 7, 8, 4});
         assertThat(birdWatcher.hasDayWithoutBirds()).isFalse();
@@ -68,7 +68,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:5")
     @DisplayName("The getCountForFirstDays method returns correct visits' count for given number of days")
-    @Disabled("remove this to run the test")
+    // @Disabled("remove this to run the test")
     public void itTestGetCountForFirstDays() {
         assertThat(birdWatcher.getCountForFirstDays(4)).isEqualTo(DAY1 + DAY2 + DAY3 + DAY4);
     }
@@ -76,7 +76,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:5")
     @DisplayName("The getCountForFirstDays method returns overall count when number of days is higher than array size")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itTestGetCountForMoreDaysThanTheArraySize() {
         assertThat(birdWatcher.getCountForFirstDays(10))
             .isEqualTo(DAY1 + DAY2 + DAY3 + DAY4 + DAY5 + DAY6 + TODAY);
@@ -85,7 +85,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:6")
     @DisplayName("The getBusyDays method returns the correct count of busy days")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itTestGetCountForBusyDays() {
         // DAY3, DAY5 and DAY6 are all >= 5 birds
         assertThat(birdWatcher.getBusyDays()).isEqualTo(3);
@@ -94,7 +94,7 @@ public class BirdWatcherTest {
     @Test
     @Tag("task:6")
     @DisplayName("The getBusyDays method correctly returns zero in case of no busy days")
-    @Disabled("remove this to run the test")
+//    @Disabled("remove this to run the test")
     public void itShouldNotHaveBusyDays() {
         birdWatcher = new BirdWatcher(new int[]{1, 2, 3, 3, 2, 1, 4});
         assertThat(birdWatcher.getBusyDays()).isEqualTo(0);
